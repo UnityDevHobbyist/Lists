@@ -71,6 +71,21 @@ namespace Lists
             ShowInventory();
             Use("Apple");
             ShowInventory();
+            Drop("Apple");
+            PickUp("Apple");
+            ShowInventory();
+            ClearInventory();
+
+            List<String> fruits = new List<String>();
+            fruits.Add("Apple");
+            fruits.Add("Orange");
+            if (fruits.Contains("Orange"))
+                Console.WriteLine("Orange!!!");
+            else
+                fruits.Remove("Apple");
+            fruits.Clear();
+            foreach (String item in fruits)
+                Console.WriteLine(fruits);
 
             //
 
